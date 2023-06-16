@@ -94,7 +94,8 @@ lazy val commonSettings = Def.settings(
     "contact@playframework.com",
     url("https://github.com/playframework")
   ),
-  licenses           := Seq("Apache-2.0" -> url("http://opensource.org/licenses/Apache-2.0")),
+  licenses := Seq("Apache-2.0" -> url("http://opensource.org/licenses/Apache-2.0")),
+  resolvers += Resolver.ApacheMavenSnapshotsRepo,
   scalaVersion       := scala213,
   crossScalaVersions := Seq(scala213, scala3),
   conflictWarning := {
